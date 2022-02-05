@@ -56,8 +56,6 @@ def local (x):
     print('x= {}, y={}, z={}'.format(x,y,z))
 local(5)
 
-"""
-
 
 # позиционные параметры
 def first_func(var_1, var_2, var_3):
@@ -72,3 +70,22 @@ def second_func(var_2, var_1, var_3):
     print(f"Dima - {var_2}; Erdem - {var_1}; Nikolay - {var_3}")
 
 second_func(var_1=10, var_2=20, var_3=30)
+
+
+
+
+def s_calc():
+    try:
+        r_val = float(input("Укажите радиус: "))
+        h_val = float(input("Укажите высоту: "))
+    except ValueError:
+        return
+    s_side = 2 * 3.14 * r_val * h_val
+    s_circle = 3.14 * r_val ** 2
+    s_full = s_side + 2 * s_circle
+    return s_side, s_full, s_circle
+
+
+s_side_val, s_circle, s_full_val = s_calc()
+print(f"Площадь боковой пов-ти - {s_side_val};Площадь цилиндра - {s_circle} Полная площадь - {s_full_val}")
+"""
