@@ -1,5 +1,5 @@
 """
-def my_sum(arg_1, arg_2):
+def my_sum(arg_1, arg_2,):
     return arg_1 + arg_2
 
 
@@ -124,7 +124,6 @@ iter_obj = (20, 2, 5, 100)
 print(sum(iter_obj))
 iter_obj = {20, 2, 5, 100}
 print(sum(iter_obj))
-
-print(list(range(10)))
-print(tuple(range()))
 """
+print(list(range(10)))
+print(tuple(range(10)))
